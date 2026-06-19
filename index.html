@@ -18,16 +18,16 @@
         }
         iframe {
             width: 100%;
-            /* แก้ไขตัวเลข 24px เป็นตัวเลขที่คุณจูนไว้ให้พอดีกับโลโก้ */
-            height: calc(100% + 0px); 
-            margin-top: -0px; 
+            height: 100%; /* ปรับความสูงเป็น 100% เต็มจอปกติ */
+            margin-top: 0; /* ปรับเป็น 0 ไม่ต้องดันขึ้นแล้ว */
             border: none;
         }
         
+        /* ลบส่วน @media อันเดิมทิ้งไปได้เลยครับ หรือถ้ายังมีอยู่ให้ปรับเป็น 0 แบบนี้ */
         @media only screen and (max-width: 600px) {
             iframe {
-                height: calc(100% + 28px); 
-                margin-top: -28px; 
+                height: 100%; 
+                margin-top: 0; 
             }
         }
     </style>
